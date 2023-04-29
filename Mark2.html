@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark 2</title>
+    <link rel="stylesheet" href="Mark 2.css">
+    <script src="https://kit.fontawesome.com/4a541b73a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header and nav bar -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Full stack <span style="color: #fa0000;">developer</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" style="color: white;" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="openmenu()"></i>
+                <div class="header-text">
+                    <p>Hi, There</p>
+                    <h1>I'm <span style="color: red;">Vignesh Balaji</span></h1>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Black and Red Gradient Professional LinkedIn Banner (1).png" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Good knowledge of OOPs concept like Abstraction, Encapsulation, Polymorphism, Inheritance. Good knowledge of strings, array, single to design pattern and java bean. Good in Exception handling and written custom exception. Good practical knowledge of Collection-Framework and Data Structure like List, Set, Map and Queue etc. Implemented custom sorting using comparable and comparator.</li>
+                            <li><span>SQL</span><br>Good understanding of RDBMS concepts. Comfortable in writing SQL statements like DDL, DML, DQL etc. Implemented Joins and subqueries</li>
+                            <li><span>HTML</span><br>Good knowledge of creating Forms, Tables and Commercial Advertisement pages only by using HTML tags and attributes.</li>
+                            <li><span>CSS</span><br>Good knowledge of Inline, Internal and External CSS styles. Good knowledge of simple selectors, combinator selectors, Pseudo class, different properties like Background properties, Gradients, Border properties, Text properties and Font properties.</li>
+                            <li><span>Javascript</span><br>Good knowledge of String, Array, Object and Reg ex. Good knowledge of some Inbuilt functions, Rest parameterized function, Call back function. Good knowledge of creating Arrow functions. Good knowledge of Document Object Model and its selectors.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>PV Grid-Connected Inverter Using Linear Active Disturbance Rejection Control
+                            </span><br>This project is based on the photo voltaic cell. By this project we can improve the quality of power generation with the help of LADRAC circuit.</li>
+                            <li><span>Optimization Of Squirrel Cage Induction Motor Using Particle Swarm Optimization
+                            </span><br>This project is completely based on the reduce the cost of regular motor and improve the efficiency of the motor by particle swarm algorithm technique. By our research we reduced approximately 25000 Rupees and improved the efficiency by 95%.</li>
+                            <li><span>Voice Control Home Automation System using Arduino UNO.
+                            </span><br>Design was done in MATLAB Simulation and Coding was done in python and Circuit
+                            design was done in Arduino UNO.</li>
+                            <li><span>Zomato Clone</span><br>Interface of the Webpage is completely done by using JavaScript, HTML and CSS only</li>
+                            <li><span>Basic Bank Webpage</span><br>User interface and user experience is completely done by using HTML, CSS, JavaScript and also used some specific glypicons to the webpage that are inbuilt icons.</li>
+                            <li><span>Spotify Clone</span><br>Interface of the Webpage is completely done by using HTML and CSS only.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Jun 2019 - Aug 2022</span><br>B.Tech Electrical and Electronics Engineering, Sastra Deemed University Aggregate with of 6.84 CGPA.</li>
+                            <li><span>Jun 2017 - Apr 2019</span><br>Diploma in Electrical and Electronics Engineering, Paramveer Polytechnic College Aggregate with the percentage of 95%</li>
+                            <li><span>Jun 2015 - Apr 2017</span><br>Intermediate, Paramveer Polytechnic College Aggregate with percentage of 55%.</li>
+                            <li><span>Apr 2014 - Mar 2015</span><br>SSLC, Government Boys Higher Secondary School Aggregate with percentage of 79%.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>J Spiders</span><br>JAVA, SQL & Web Technologies</li>
+                            <li><span>TCS ion</span><br>Career edge & Communication skills</li>
+                            <li><span>Core Innovation technology</span><br>PCB designing, Smart phones and Laptop repair &service course</li>
+                            <li><span>IIT Bombay</span><br>C & Cpp Programming</li>
+                            <li><span>Accio job</span><br>Web technology</li>
+                            <li><span>Great Learning</span><br>UI/UX Design Basics</li>
+                            <li><span>NPTEL</span><br>Developing soft skills and personality, Employment Communication- lab based course</li>
+                            <li><span>Sastra Deemed University</span><br>MATLAB training</li>
+                            <li><span>Intel</span><br>Distribution of Openvino toolkit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Services -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Hi, I'm Vignesh Balaji, a passionate web designer with good knowledge in the field. I specialize in creating beautiful, user-friendly websites that are optimized for search engines and provide an exceptional user experience. With a keen eye for design and a commitment to excellence, I'm here to help you create a website that will take your business to the next level.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Designer</h2>
+                <p>Hello, I'm Vignesh Balaji, a UI/UX designer with good knowledge in designing engaging digital experiences. I specialize in creating user-centered designs that solve real-world problems and drive business results. My passion for design started at a young age, and I've been honing my skills ever since.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Developer</h2>
+                <p>Hello, I'm Vignesh Balaji, a Java developer with good knowledge in java development. I'm passionate about writing clean, efficient, and maintainable code and enjoy solving complex problems using Java technologies. I'm always looking for new challenges and opportunities to learn and grow as a developer.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./design-_2__4x.webp" alt="work1">
+                <div class="layer">
+                    <h3>Zomato Clone</h3>
+                    <p>Interface of the Webpage is completely done by using JavaScript, HTML and CSS only. In that you can see the difference between original and my site.</p>
+                    <a href="https://vignesh6balaji.github.io/ZomatoClone/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./f82818a0efe250974d7723888dd3d924.webp" alt="work2">
+                <div class="layer">
+                    <h3>Basic Bank webpage</h3>
+                    <p>User interface and user experience is completely done by using HTML, CSS, JavaScript and also used some specific glypicons to the webpage that are inbuilt icons.</p>
+                    <a href="https://vignesh6balaji.github.io/Bankpage/Fullsite.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./mwp-header.png" alt="work3">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>Interface of the Webpage is completely done by using HTML and CSS only.In that you can see the difference between original and my site.</p>
+                    <a href="https://vignesh6balaji.github.io/Spotify/Spotify.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Vignesh6Balaji/Vignesh6Balaji.git" target="_blank" class="btn">See more</a>
+    </div>
+</div>
+<!-- Contacts -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1><br><br>
+                <p><i class="fa-regular fa-envelope"></i>319vigneshbalaji@gmail.com</p><br>
+                <p><i class="fa-solid fa-phone"></i>9677363459</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vigneshbalaji666" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Vignesh6Balaji/Vignesh6Balaji.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.link/mjg4go" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/Vigilante66" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="./Vignesh_Balaji H_Resume_29-04-2023-12-42-59.pdf" target="_blank" class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="text" name="email" placeholder="Enter your Email" required>
+                    <input type="number" name="Pnumber" placeholder="91*****" required>
+                    <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>Copyright <i class="fa-regular fa-copyright fa-sm"></i> Made by Vignesh Balaji <i class="fa-solid fa-heart" style="color: #fa0000;"></i></p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx9TiIiehmKlUfaNRxzU9Me3q8oJ_quBQ6Jmx3LmwKbYkT0f8Syde_HnVYQpNMAF9pbuw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
